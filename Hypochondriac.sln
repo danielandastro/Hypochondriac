@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hypochondriac", "Hypochondriac\Hypochondriac.csproj", "{F9492C3C-620D-41E3-BE8A-DB05EB6935DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEditor", "GameEditor\GameEditor.csproj", "{12A75596-533D-4FB4-AF0B-0B8D86BA77CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9492C3C-620D-41E3-BE8A-DB05EB6935DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9492C3C-620D-41E3-BE8A-DB05EB6935DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9492C3C-620D-41E3-BE8A-DB05EB6935DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9492C3C-620D-41E3-BE8A-DB05EB6935DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A75596-533D-4FB4-AF0B-0B8D86BA77CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A75596-533D-4FB4-AF0B-0B8D86BA77CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A75596-533D-4FB4-AF0B-0B8D86BA77CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A75596-533D-4FB4-AF0B-0B8D86BA77CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
