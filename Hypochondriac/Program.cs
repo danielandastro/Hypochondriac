@@ -5,6 +5,7 @@ namespace Hypochondriac
 {
     public class Workings
     {
+        public const string version = "0.2";
         public static DataTypes.GameSettings GlobalSettings;
         public static int score;
         public static DataTypes.EventData gevent;
@@ -28,6 +29,12 @@ namespace Hypochondriac
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to hypochondriac");
+            if (!Workings.GlobalSettings.version.Equals(Workings.version))
+            {
+                Console.WriteLine("The current game file may not work, it was created for version " + Workings.GlobalSettings.version
+                    + " and you are running version " + Workings.version + " of the game, you may experience potentially game breaking glitches which render the game" +
+                    " unplayable");
+            }
             Console.WriteLine("You are " + Workings.GlobalSettings.playerdata.name + " and your character's name is " + Workings.GlobalSettings.chardata.name);
             try { Workings.GlobalSettings = JsonConvert.DeserializeObject<DataTypes.GameSettings>(File.ReadAllText("gamesettings.json")); }
             catch (Exception)

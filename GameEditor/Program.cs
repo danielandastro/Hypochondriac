@@ -6,6 +6,7 @@ namespace GameEditor
 {
     class Program
     {
+        public const string version = "0.2";
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the hypochondriac game editor");
@@ -49,6 +50,8 @@ namespace GameEditor
             Console.WriteLine("Read Player Events");
             Console.WriteLine("Enter ease (0 - 100 recommended)");
             data.ease = int.Parse(Console.ReadLine());
+            data.version = version;
+            Console.WriteLine("Set file version information to version " + version);
             File.WriteAllText("gamesettings.json", Newtonsoft.Json.JsonConvert.SerializeObject(data));
 
         }
