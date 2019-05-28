@@ -35,6 +35,7 @@ namespace Hypochondriac
                     + " and you are running version " + Workings.version + " of the game, you may experience potentially game breaking glitches which render the game" +
                     " unplayable");
             }
+            Console.WriteLine(Workings.GlobalSettings.introtext);
             Console.WriteLine("You are " + Workings.GlobalSettings.playerdata.name + " and your character's name is " + Workings.GlobalSettings.chardata.name);
             try { Workings.GlobalSettings = JsonConvert.DeserializeObject<DataTypes.GameSettings>(File.ReadAllText("gamesettings.json")); }
             catch (Exception)

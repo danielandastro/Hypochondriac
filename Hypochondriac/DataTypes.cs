@@ -23,6 +23,7 @@ namespace Hypochondriac
             public CharacterINFO chardata;
             public PlayerINFO playerdata;
             public string version;
+            public string introtext;
         }
         public struct EventData
         {

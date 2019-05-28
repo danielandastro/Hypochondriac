@@ -50,6 +50,8 @@ namespace GameEditor
             Console.WriteLine("Read Player Events");
             Console.WriteLine("Enter ease (0 - 100 recommended)");
             data.ease = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter any text which you want the game to read out to the user");
+            data.introtext = Console.ReadLine().Replace("##ver", version);
             data.version = version;
             Console.WriteLine("Set file version information to version " + version);
             File.WriteAllText("gamesettings.json", Newtonsoft.Json.JsonConvert.SerializeObject(data));
